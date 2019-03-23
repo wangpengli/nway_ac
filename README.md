@@ -38,9 +38,11 @@ Nway_ac为nway auto call的缩写，主要用于落地间对接时，可能需�
 
 8.	下载nway_ac  #git clone https://github.com/nwaycn/nway_ac.git
 
+8.9. 使用qsql CREATE创建名为nway_ac的数据库
 9.	导入数据库，安装好的预创建数据库nway_ac 并进入db目录下
 
-#psql  -U postgres  -W -d nway_ac-f nway_ac.sql
+#psql  -U postgres  -W -d nway_ac -f nway_ac.sql
+此处修改了一点，nway_ac 和 -f之间，原先没有空格。#wpl
 
 
 10.	修改nway_ac/nway_ac/ settings.py 将正确的数据库配置更新在其中
